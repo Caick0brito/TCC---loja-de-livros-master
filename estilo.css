@@ -1,0 +1,47 @@
+header {
+  background-color: rgb(124, 120, 120);
+  width: 100vw;
+  height: 10vh;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.btnheader {
+  height: 30px;
+}
+
+
+h1 {
+  height: 3%;
+
+}
+
+#PesquisaLivro {
+  border-radius: 4px;
+}
+
+.pesquisa {
+  display: flex;
+  align-items: center;
+
+}
+
+.Carrinho {
+  font-size: 30px;
+  display: flex
+}
+
+main {
+  background-color: rgb(187, 184, 226);
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  row-gap: 10px;
+  column-gap: 10px;
+  align-items: center;
+  flex-wrap: wrap;
+  margin-left: auto;
+  margin-right: auto;
+}
