@@ -35,13 +35,38 @@ h1 {
 
 main {
   background-color: rgb(187, 184, 226);
-  height: 100vh;
-  display: flex;
+  height: 90vh;
+
+}
+
+div img {
+  width: 30vh;
+  margin: 5px;
+}
+
+
+.Caixa1 {
+  border: 2px solid rgb(0, 0, 0);
+  display: inline-block;
+  margin: 5px;
+  border-radius: 5px;
+  text-align: center;
+   justify-content: center;
+}
+
+.Caixa2 {
+  border: 2px solid rgb(0, 0, 0);
+  display: inline-block;
+  margin: 5px;
+  border-radius: 5px;
+  text-align: center;
   justify-content: center;
-  row-gap: 10px;
-  column-gap: 10px;
-  align-items: center;
-  flex-wrap: wrap;
-  margin-left: auto;
-  margin-right: auto;
+}
+
+.Caixa3 {
+  border: 2px solid rgb(0, 0, 0);
+  display: inline-block;
+  margin: 5px;
+  border-radius: 5px;
+  justify-content: center;
 }
