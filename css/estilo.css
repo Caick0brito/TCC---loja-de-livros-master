@@ -1,72 +1,59 @@
 header {
   background-color: rgb(124, 120, 120);
   width: 100vw;
-  height: 10vh;
+  height: 70px;
   display: flex;
   flex-direction: row;
   align-items: center;
   justify-content: space-around;
 }
-
 .btnheader {
   height: 30px;
 }
-
-
-h1 {
-  height: 3%;
-
+.logo{
+  display: flex;
+margin-top: 8px;
+ font-size: 300%;
+ color: white;
+ 
 }
-
 #PesquisaLivro {
   border-radius: 4px;
 }
-
 .pesquisa {
   display: flex;
   align-items: center;
-
 }
-
 .Carrinho {
   font-size: 30px;
   display: flex
 }
-
 main {
-  background-color: rgb(187, 184, 226);
-  height: 90vh;
-
+  background-color: rgb(32, 32, 32);
+  height: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
 }
-
 div img {
   width: 30vh;
   margin: 5px;
 }
-
-
 .Caixa1 {
-  border: 2px solid rgb(0, 0, 0);
-  display: inline-block;
   margin: 5px;
   border-radius: 5px;
   text-align: center;
-   justify-content: center;
-}
-
-.Caixa2 {
-  border: 2px solid rgb(0, 0, 0);
-  display: inline-block;
-  margin: 5px;
-  border-radius: 5px;
-  text-align: center;
+  align-items: center;
   justify-content: center;
+  margin: 20px;
+  background-color: rgba(80, 79, 79, 0.521);
 }
-
-.Caixa3 {
-  border: 2px solid rgb(0, 0, 0);
-  display: inline-block;
-  margin: 5px;
+.addCarrinho {
+  padding: 3px;
+  background-color: rgb(126, 0, 0);
+  color: white;
+  margin-bottom: 5px ;
+  border: none;
   border-radius: 5px;
-  justify-content: center;
 }

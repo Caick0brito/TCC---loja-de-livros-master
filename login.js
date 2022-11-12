@@ -20,6 +20,36 @@ async function Pesquisar_Livro() {
     var resultado = document.getElementById("resultado");
 
     // sempre limpo oq está dentro da DIV resultado
-    resultado.innerHTML = "";
-
+    resultado.innerHTML = "";  
+    
 }
+
+async function entrar() {
+    debugger
+    const corpo = {
+        email: document.getElementById("email").value,
+        senha: document.getElementById("senha").value,
+
+    };
+
+    const requisicao = {
+        method: 'POST',
+        body: JSON.stringify(corpo),
+        heders: {
+            "content-type": "application/json"
+        }
+    }
+    const resultadoApi = await fetch("https://codifica-demo-api.herokuapp.com/api/v1/users/login", requisicao);
+    const resultadojson = await resultadoApi.json();
+
+    alert(resultadojson.mensagem)
+}
+    
+function navegarParaPagina2() {
+    window.location.href = "pagina2.html"
+}
+
+function navegarParaPagina1() {
+    window.location.href = "home.html"
+}
+   
