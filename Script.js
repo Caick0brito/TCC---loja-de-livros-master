@@ -20,8 +20,8 @@ async function Pesquisar_Livro() {
     var resultado = document.getElementById("resultado");
 
     // sempre limpo oq está dentro da DIV resultado
-    resultado.innerHTML = "";  
-    
+    resultado.innerHTML = "";
+
 }
 
 async function entrar() {
@@ -44,7 +44,7 @@ async function entrar() {
 
     alert(resultadojson.mensagem)
 }
-    
+
 function navegarParaPagina2() {
     window.location.href = "pagina2.html"
 }
@@ -52,4 +52,6 @@ function navegarParaPagina2() {
 function navegarParaPagina1() {
     window.location.href = "home.html"
 }
-   
+async function Comprar() {
+    alert("oi mundo")
+}
