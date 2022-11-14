@@ -45,41 +45,50 @@ async function entrar() {
     alert(resultadojson.mensagem)
 }
 
-function navegarHome() {
+function navegarLogin() {
     window.location.href = "Login/Login.html";
 }
 
-function navegarLogin() {
+function navegarHome() {
     window.location.href = "../home.html";
 }
 async function SetHome() {
     // api  
-    var rodadas = 0;
-    var response = ("https://api.itbook.store/1.0/new");
-    var livros = await response.json();
-    var livros = livros.books
+    
+    // var rodadas = 0;
+    debugger;
+    var response = await fetch("https://api.itbook.store/1.0/new");
+
+    console.log(response)
+    var json = response.JSON
+    var preco= json.books[0].price
+    alert (preco)
+    var livros = json.books[2].price
     var idnumber = 1 + rodadas;
     livros.lenght = rodadas;
     // infos da api
     var titulo = document.getElementById("titulo1").innerText = livros.title
     var preco = document.getElementById("preco" + idnumber).innerText = livros.price;
     var imagem = document.getElementById("titulo" + idnumber).src = livros.image;
-    alert(preco)
+    alert(livros)
     // for 
 
 
 
     alert()
 
-    for (contador = 0; contador < 9; contador++) {
-        var imagemhome = document.getElementById("caixa" + numeroimagem);
-        rodadas = rodadas + 1
+    // for (contador = 0; contador < 9; contador++) {
+    //     var imagemhome = document.getElementById("caixa" + numeroimagem);
+    //     rodadas = rodadas + 1
 
 
-    }
+    // }
 }
 async function Comprar() {
+    debugger;
+    var response = await fetch("https://api.itbook.store/1.0/new");
 
+    console.log(response)
 
 }
 
