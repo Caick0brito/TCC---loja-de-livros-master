@@ -45,52 +45,41 @@ async function entrar() {
     alert(resultadojson.mensagem)
 }
 
-function navegarParaPagina2() {
-<<<<<<< HEAD
-    window.location.href = "pagina2.html";
+function navegarHome() {
+    window.location.href = "Login/Login.html";
 }
 
-function navegarParaPagina1() {
-    window.location.href = "home.html";
+function navegarLogin() {
+    window.location.href = "../home.html";
 }
-// async function SetHome() {
-//     // api  
-//     var rodadas = 0;
-//     var response = ("https://api.itbook.store/1.0/new");
-//     var livros = await response.json();
-//     var livros = livros.books
-//     var idnumber = 1 + rodadas;
-//     livros.lenght = rodadas;
-//     // infos da api
-//     var titulo = document.getElementById("titulo1").innerText = livros.title
-//     var preco = document.getElementById("preco" + idnumber).innerText = livros.price;
-//     var imagem = document.getElementById("titulo" + idnumber).src = livros.image;
-//     alert(preco)
-//     // for 
+async function SetHome() {
+    // api  
+    var rodadas = 0;
+    var response = ("https://api.itbook.store/1.0/new");
+    var livros = await response.json();
+    var livros = livros.books
+    var idnumber = 1 + rodadas;
+    livros.lenght = rodadas;
+    // infos da api
+    var titulo = document.getElementById("titulo1").innerText = livros.title
+    var preco = document.getElementById("preco" + idnumber).innerText = livros.price;
+    var imagem = document.getElementById("titulo" + idnumber).src = livros.image;
+    alert(preco)
+    // for 
 
 
 
-//     alert()
+    alert()
 
-//     for (contador = 0; contador < 9; contador++) {
-//         var imagemhome = document.getElementById("caixa" + numeroimagem);
-//         rodadas = rodadas + 1
+    for (contador = 0; contador < 9; contador++) {
+        var imagemhome = document.getElementById("caixa" + numeroimagem);
+        rodadas = rodadas + 1
 
 
-//     }
-// }
+    }
+}
 async function Comprar() {
 
-=======
-    window.location.href = "login/login.html"
-}
 
-function navegarParaPagina1() {
-    window.location.href = "../home.html"
-}
-
-async function Comprar() {
-    alert("oi mmundo")
->>>>>>> 1a28ed4a97d921c5347f6697d5bfda38adcd2aa2
 }
 

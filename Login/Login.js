@@ -20,8 +20,8 @@ async function Pesquisar_Livro() {
     var resultado = document.getElementById("resultado");
 
     // sempre limpo oq está dentro da DIV resultado
-    resultado.innerHTML = "";  
-    
+    resultado.innerHTML = "";
+
 }
 
 async function entrar() {
@@ -42,14 +42,14 @@ async function entrar() {
     const resultadoApi = await fetch("https://codifica-demo-api.herokuapp.com/api/v1/users/login", requisicao);
     const resultadojson = await resultadoApi.json();
 
-    alert(resultadojson.mensagem)}
+    alert(resultadojson.mensagem)
+}
 
 async function entrar() {
     debugger
     const corpo = {
         email: document.getElementById("email").value,
         senha: document.getElementById("senha").value,
-
     };
 
     const requisicao = {
