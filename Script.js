@@ -46,12 +46,14 @@ async function entrar() {
 }
 
 function navegarParaPagina2() {
-    window.location.href = "pagina2.html"
+    window.location.href = "login/login.html"
 }
 
 function navegarParaPagina1() {
-    window.location.href = "home.html"
+    window.location.href = "../home.html"
 }
+
 async function Comprar() {
-    alert("oi mundo")
+    alert("oi mmundo")
 }
+
