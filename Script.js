@@ -46,6 +46,7 @@ async function entrar() {
 }
 
 function navegarParaPagina2() {
+<<<<<<< HEAD
     window.location.href = "pagina2.html";
 }
 
@@ -80,4 +81,16 @@ function navegarParaPagina1() {
 // }
 async function Comprar() {
 
+=======
+    window.location.href = "login/login.html"
 }
+
+function navegarParaPagina1() {
+    window.location.href = "../home.html"
+}
+
+async function Comprar() {
+    alert("oi mmundo")
+>>>>>>> 1a28ed4a97d921c5347f6697d5bfda38adcd2aa2
+}
+
