@@ -6,6 +6,7 @@ header {
   flex-direction: row;
   align-items: center;
   justify-content: space-around;
+  border-bottom: 2px brown solid;
 }
 
 #btnheader {
@@ -45,7 +46,7 @@ main {
   display: flex;
   box-sizing: border-box;
   background-color: rgb(32, 32, 32);
-  height: 100vh;
+  height: 100%;
   width: 100vw;
   justify-content: center;
   align-items: center;
@@ -60,8 +61,21 @@ img {
   object-fit: cover;
 }
 
+#titulo-livros {
+  color: #fff;
+  display: flex;
+  text-align: center;
+}
+
+.Caixa1:hover {
+  background-color: rgb(68, 67, 67);
+  transition: 0.35s;
+}
+
 .Caixa1 {
-  width: 300px;
+  box-sizing: border-box;
+  max-width: 300px;
+  max-height: 3750px;
   margin-left: 10px;
   margin-bottom: 10px;
   border-radius: 5px;
@@ -101,7 +115,7 @@ a:hover {
   display: flex;
   box-sizing: border-box;
   background-color: rgb(32, 32, 32);
-  height: 100vh;
+  height: 90vh;
   width: 60vw;
   justify-content: center;
   align-items: center;
@@ -114,6 +128,7 @@ body {
 }
 
 p {
+  margin: 5px;
   color: white;
 }
 

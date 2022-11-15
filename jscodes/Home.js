@@ -1,9 +1,8 @@
 window.onload = async function sethome() {
 
-    var response = await fetch("https://api.itbook.store/1.0/search/mongodb");
+    var response = await fetch("https://api.itbook.store/1.0/search/love");
     var bodyjson = await response.json();
     var contador = 0
-
 
 
 
@@ -18,8 +17,10 @@ window.onload = async function sethome() {
         var precoapi = bodyjson.books[contador].price;
         var imagemapi = bodyjson.books[contador].image;
 
+        var preco = precoapi.replace("$", "R$  ")
+
         document.getElementById(idtitulo).innerText = tituloapi
-        document.getElementById(idpreco).innerText = precoapi
+        document.getElementById(idpreco).innerText = preco
         document.getElementById(idimg).src = imagemapi
 
 
