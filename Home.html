@@ -8,32 +8,32 @@
     <title>Home</title>
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/estilo.css">
-
+    <script src="Home.js"></script>
 
 </head>
 
 <body>
-    
+
 
     <header>
-      
+
         <a href="Home.html" class="logo"><i class="fa-solid fa-book-journal-whills"></i></a>
-         
-          
-          
-          
-           <div class="Pesquisa">
+
+
+
+
+        <div class="Pesquisa">
             <i id="Pesquisario" class="fa-solid fa-magnifying-glass"></i>
             <input type="text" class="btnheader" placeholder="Pesquisar" id="PesquisaLivro">
             <input type="button" class="btnheader" value="Pesquisa" src="" onclick=Pesquisar_Livro()>
-        </div> 
+        </div>
         <div class="Carrinho">
             <i id="Login" class="fa-solid fa-user" onclick="navegarLogin()"></i>
             <i id="btnheader" class="fa-solid fa-cart-shopping" onclick=""></i>
         </div>
 
     </header>
-    <main>
+    <main onload="sethome">
 
         <div id="centrodeimagens">
             <div class="Caixa1" id="caixa1">
@@ -46,7 +46,7 @@
             <div class="Caixa1" id="caixa2">
                 <img id="img2" src="HarryPotter.jpg" alt="">
                 <p class="titulo" id="titulo2"></p>
-                <p class="preco" id="preco1"></p>
+                <p class="preco" id="preco2"></p>
                 <center>
                     <input type="button" value="Adicionar Carrinho" class="addCarrinho" onclick=Comprar()>
                 </center>
@@ -117,7 +117,7 @@
     </footer>
 
 
-    <script src="Home.js"></script>
+
     <script src="Script.js"></script>
     <script src="https://kit.fontawesome.com/e14263e65c.js" crossorigin="anonymous"></script>
 </body>

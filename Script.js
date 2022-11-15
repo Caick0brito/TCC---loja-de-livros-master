@@ -52,43 +52,45 @@ function navegarLogin() {
 function navegarHome() {
     window.location.href = "../home.html";
 }
-async function SetHome() {
-    // api  
-    
-    // var rodadas = 0;
-    debugger;
-    var response = await fetch("https://api.itbook.store/1.0/new");
+// async function SetHome() {
+//     // api  
 
-    console.log(response)
-    var json = response.JSON
-    var preco= json.books[0].price
-    alert (preco)
-    var livros = json.books[2].price
-    var idnumber = 1 + rodadas;
-    livros.lenght = rodadas;
-    // infos da api
-    var titulo = document.getElementById("titulo1").innerText = livros.title
-    var preco = document.getElementById("preco" + idnumber).innerText = livros.price;
-    var imagem = document.getElementById("titulo" + idnumber).src = livros.image;
-    alert(livros)
-    // for 
+//     // var rodadas = 0;
+//     debugger;
+//     var response = await fetch("https://api.itbook.store/1.0/new");
 
-
-
-    alert()
-
-    // for (contador = 0; contador < 9; contador++) {
-    //     var imagemhome = document.getElementById("caixa" + numeroimagem);
-    //     rodadas = rodadas + 1
+//     console.log(response)
+//     var json = response.JSON
+//     var preco= json.books[0].price
+//     alert (preco)
+//     var livros = json.books[2].price
+//     var idnumber = 1 + rodadas;
+//     livros.lenght = rodadas;
+//     // infos da api
+//     var titulo = document.getElementById("titulo1").innerText = livros.title
+//     var preco = document.getElementById("preco" + idnumber).innerText = livros.price;
+//     var imagem = document.getElementById("titulo" + idnumber).src = livros.image;
+//     alert(livros)
+//     // for 
 
 
-    // }
-}
+
+
+
+// for (contador = 0; contador < 9; contador++) {
+//     var imagemhome = document.getElementById("caixa" + numeroimagem);
+//     rodadas = rodadas + 1
+
+
+// }}
+
 async function Comprar() {
     debugger;
     var response = await fetch("https://api.itbook.store/1.0/new");
+    var bodyjson = await response.json()
+    var book = bodyjson.books[0].title
 
-    console.log(response)
-
+    console.log(book)
+    alert(book)
 }
 
