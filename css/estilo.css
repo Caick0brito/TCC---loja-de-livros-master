@@ -1,7 +1,7 @@
 header {
   background-color: rgb(124, 120, 120);
-  width: 100vw;
-  height: 70px;
+  width: 99vw;
+  height: 80px;
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -45,9 +45,9 @@ header {
 main {
   display: flex;
   box-sizing: border-box;
-  background-color: rgb(32, 32, 32);
+
   height: 100%;
-  width: 100vw;
+  width: 99vw;
   justify-content: center;
   align-items: center;
   flex-direction: row;
@@ -115,7 +115,7 @@ a:hover {
   display: flex;
   box-sizing: border-box;
   background-color: rgb(32, 32, 32);
-  height: 90vh;
+  height: 100vh;
   width: 60vw;
   justify-content: center;
   align-items: center;
@@ -164,4 +164,26 @@ p {
   border-radius: 100%;
   color: rgb(0, 0, 0);
   font-size: 25px;
+}
+
+aside {
+
+  height: 100vh;
+  width: 25%;
+  margin-right: 0;
+  background-color: brown;
+  right: 0;
+}
+
+aside.show {
+  width: auto;
+}
+
+.carrinho-titulo-main {
+  padding-bottom: 15px;
+  padding-top: 15px;
+  color: white;
+  font-size: 50px;
+  text-align: center;
+  background-color: black;
 }
