@@ -20,6 +20,8 @@ async function Addcarrinho(number) {
     var precototal =
         console.log(precototal)
 
+
+
 }
 
 function Carrinho() {
