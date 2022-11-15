@@ -124,3 +124,8 @@ body {
   box-shadow: black;
   margin-left: 0px;
 }
+
+#Pesquisario {
+  color: rgb(0, 0, 0);
+  font-size: 4vh;
+}
