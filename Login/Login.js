@@ -18,5 +18,12 @@ async function entrar() {
     const resultadoApi = await fetch("https://codifica-demo-api.herokuapp.com/api/v1/users/login", requisicao);
     const resultadojson = await resultadoApi.json();
 
-    alert(resultadojson.mensagem)
+    if (resultadoApi.ok) {
+        window.location.href = "..Home.html";
+
+    } else {
+
+        alert(resultadojson.mensagem)
+    }
+
 }
