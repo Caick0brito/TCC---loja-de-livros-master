@@ -25,7 +25,7 @@ async function entrar() {
 
     if (resultadoApi.ok) {
         corpo.login = true
-        corpo.append(CarrinhoArray)
+        // corpo.append(CarrinhoArray)
         var corpojson = JSON.stringify(corpo)
         localStorage.setItem("login", corpojson)
         window.location.href = "../Main/Home.html";
@@ -41,7 +41,7 @@ function navegarLogin() {
 }
 
 function navegarHome() {
-    window.location.href = "../Main/home.html";
+    window.location.href = "../Main/Home.html";
 }
 
 async function Comprar() {
@@ -56,7 +56,7 @@ async function Comprar() {
 }
 
 async function Addcarrinho(number) {
-    debugger
+    // debugger
     var response = await fetch("https://api.itbook.store/1.0/search/love");
     var bodyjson = await response.json();
 
@@ -71,13 +71,12 @@ async function Addcarrinho(number) {
         preco: bodyjson.books[number].price.replace("$", "R$ "),
         imagem: bodyjson.books[number].image,
     }
-    // uso para cálculo
 
+    // uso para cálculo
     var precojson = pedido.preco.replace("R$", "");
     var precocalc = parseFloat(precojson);
     var precototal = precocalc + precocalc * 2;
     console.log(precototal)
-
 
     // area do produto no carrinho
     var addproduto = document.createElement("div");
@@ -92,6 +91,7 @@ async function Addcarrinho(number) {
     var Imgdadiv = document.createElement("img")
     Imgdadiv.classList.add("img-produto-carrinho")
     Imgdadiv.setAttribute("id", idimg)
+    Imgdadiv.src = pedido.imagem
     divImg.append(Imgdadiv)
 
     //div do titulo do carrinho
@@ -103,6 +103,7 @@ async function Addcarrinho(number) {
     var titulocart = document.createElement("p")
     titulocart.classList.add("p-titulo-carrinho")
     titulocart.setAttribute("id", idtitulo)
+    titulocart.innerText = pedido.titulo
     divTitulo.append(titulocart)
 
     // div do preço do carrinho
@@ -114,7 +115,11 @@ async function Addcarrinho(number) {
     var precocart = document.createElement("p")
     precocart.classList.add("p-preco-carrinho")
     precocart.setAttribute("id", idpreco)
+    precocart.innerText = pedido.preco
+    divpreco.append(precocart)
     // precocart.innerText =   ;
 
-    document.querySelector(".carrinho-titulo-main").appendChild(addproduto)
+    document.querySelector("#espaco-carrinho").appendChild(addproduto)
+
+
 }

@@ -1,6 +1,6 @@
 
 function MudarPagina() {
-    window.location.href ="paginaEmail/Home.html"
+    window.location.href = "../main/Home.html"
 }
 
 
@@ -15,7 +15,8 @@ window.onload = async function sethome() {
 
 
     for (contador; contador < 9; contador++) {
-        // debugger
+        if (window.location.href === "../Main/Home.html")
+            debugger
         var idtitulo = "titulo" + contador
         var idpreco = "preco" + contador
         var idimg = "img" + contador
