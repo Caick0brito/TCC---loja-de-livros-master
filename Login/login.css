@@ -60,3 +60,17 @@ header {
   justify-content: space-around;
   border-bottom: 2px brown solid;
 }
+
+.logo {
+  display: flex;
+  margin-top: 8px;
+  font-size: 300%;
+  color: white; 
+}
+
+#btnheader {
+  color: white;
+  font-size: 150%;
+  box-shadow: black;
+  margin-left: 25px;
+}
