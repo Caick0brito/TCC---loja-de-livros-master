@@ -204,8 +204,8 @@ aside.show {
 .add-produto {
   box-shadow: 2px 2px 2px rgb(87, 87, 87);
   box-sizing: border-box;
-  margin-left: 10px;
-  margin-bottom: 10px;
+  margin-left: 5px;
+  margin-bottom: 5px;
   border-radius: 4px;
   text-align: left;
   align-items: center;
@@ -215,5 +215,5 @@ aside.show {
 }
 
 .espaco-carrinho {
-  
+
 }
