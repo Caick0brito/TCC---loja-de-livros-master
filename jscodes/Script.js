@@ -35,8 +35,8 @@ async function entrar() {
     const requisicao = {
         method: 'POST',
         body: JSON.stringify(corpo),
-        heders: {
-            "content-type": "application/json"
+        headers: {
+            "Content-Type": "application/json"
         }
     }
     const resultadoApi = await fetch("https://codifica-demo-api.herokuapp.com/api/v1/users/login", requisicao);
