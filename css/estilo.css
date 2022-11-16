@@ -187,10 +187,24 @@ aside.show {
 }
 
 .carrinho-titulo-main {
+  display: flex;
   padding-bottom: 15px;
   padding-top: 15px;
   color: white;
-  font-size: 50px;
-  text-align: center;
+  font-size: 10px;
   background-color: black;
+  text-align: left;
+}
+
+.img-produto-carrinho {
+  width:30vh;
+  height: 50vh;
+}
+
+.add-produto {
+
+}
+
+.espaco-carrinho {
+
 }
