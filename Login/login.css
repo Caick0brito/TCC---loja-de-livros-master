@@ -81,8 +81,8 @@ header {
   
   cursor: pointer;
 }
-i {
-  box-shadow: 5px 5px 5px rgb(87, 87, 87);
+i:hover {
+  cursor: pointer
 }
 #btnheader {
   cursor: pointer;
