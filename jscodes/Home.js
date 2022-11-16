@@ -1,5 +1,7 @@
 
-
+function MudarPagina() {
+    window.location.href ="/Home.html"
+}
 
 
 window.onload = async function sethome() {
@@ -13,8 +15,7 @@ window.onload = async function sethome() {
 
 
     for (contador; contador < 9; contador++) {
-        if (window.location.href === "../Main/Home.html")
-            debugger
+        // debugger
         var idtitulo = "titulo" + contador
         var idpreco = "preco" + contador
         var idimg = "img" + contador

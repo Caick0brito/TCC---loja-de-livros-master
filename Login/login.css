@@ -44,11 +44,6 @@ input button {
   border: 2px rgb(0, 0, 0) solid;
 }
 
-.botao {
-  position: relative;
-  left: -5px; 
-  
-}
 
 header {
   background-color: rgb(124, 120, 120);
@@ -69,8 +64,30 @@ header {
 }
 
 #btnheader {
-  color: white;
-  font-size: 150%;
-  box-shadow: black;
-  margin-left: 25px;
+  display: flex;
+  margin-top: 8px;
+  font-size: 300%;
+  color: white; 
+}
+
+#Login {
+  display: flex;
+  margin-top: 8px;
+  font-size: 300%;
+  color: white; 
+}
+
+.logo:hover {
+  
+  cursor: pointer;
+}
+i {
+  box-shadow: 5px 5px 5px rgb(87, 87, 87);
+}
+#btnheader {
+  cursor: pointer;
+}
+
+#Login {
+  cursor: pointer;
 }
