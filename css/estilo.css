@@ -202,9 +202,18 @@ aside.show {
 }
 
 .add-produto {
-
+  box-shadow: 2px 2px 2px rgb(87, 87, 87);
+  box-sizing: border-box;
+  margin-left: 10px;
+  margin-bottom: 10px;
+  border-radius: 4px;
+  text-align: left;
+  align-items: center;
+  justify-content: center;
+  margin: 10px;
+  background-color: rgba(80, 79, 79, 0.521);
 }
 
 .espaco-carrinho {
-
+  
 }
