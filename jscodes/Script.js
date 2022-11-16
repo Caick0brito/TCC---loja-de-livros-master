@@ -56,7 +56,7 @@ async function Comprar() {
 }
 
 async function Addcarrinho(number) {
-
+    debugger
     var response = await fetch("https://api.itbook.store/1.0/search/love");
     var bodyjson = await response.json();
 
@@ -79,5 +79,40 @@ async function Addcarrinho(number) {
     console.log(precototal)
 
 
+    // area do produto no carrinho
+    var addproduto = document.createElement("div");
+    addproduto.classList.add("add-produto");
 
+    // area da imagem do produto no carrinho
+    var divImg = document.createElement("div");
+    divImg.classList.add("div-img-produto-carrinho");
+    addproduto.append(divImg);
+
+    // imagem do carrinho
+    var Imgdadiv = document.createElement("img")
+    Imgdadiv.classList.add("img-produto-carrinho")
+    Imgdadiv.setAttribute("id", idimg)
+    divImg.append(Imgdadiv)
+
+    //div do titulo do carrinho
+    var divTitulo = document.createElement("div")
+    divTitulo.classList.add("titulo-produto-carrinho")
+    addproduto.append(divTitulo)
+
+    // titulo do carrinho
+    var titulocart = document.createElement("p")
+    titulocart.classList.add("p-titulo-carrinho")
+    titulocart.setAttribute("id", idtitulo)
+    divTitulo.append(titulocart)
+
+    // div do preço do carrinho
+    var divpreco = document.createElement("div")
+    divpreco.classList.add("preco-produto-carrinho")
+    addproduto.append(divpreco)
+
+    //preço do carrinho
+    var precocart = document.createElement("p")
+    precocart.classList.add("p-preco-carrinho")
+    precocart.setAttribute("id", idpreco)
+    // precocart.innerText =   ;
 }
