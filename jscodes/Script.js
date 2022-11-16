@@ -1,12 +1,15 @@
-
+var corpojsonmain = localStorage.getItem("login")
+var corpomain = JSON.parse(corpojsonmain)
 // criei uma função e add o async
+
 var CarrinhoArray  = []
 async function entrar() {
     debugger
     var corpo = {
         email: document.getElementById("email").value,
         senha: document.getElementById("senha").value,
-
+        login:false,
+        produtos: []
     };
 
     const requisicao = {
@@ -21,7 +24,10 @@ async function entrar() {
     alert (resultadojson.mensagem)
 
     if (resultadoApi.ok){
-
+        corpo.login = true
+        corpo.append(CarrinhoArray)
+        var corpojson = JSON.stringify(corpo)
+        localStorage.setItem("login", corpojson )
         window.location.href = "../Main/Home.html";
 
     } else {
@@ -40,6 +46,7 @@ function navegarHome() {
 
 async function Comprar() {
     debugger;
+    console.log(corpomain);
     var response = await fetch("https://api.itbook.store/1.0/new");
     var bodyjson = await response.json()
     var book = bodyjson.books[0].title
@@ -49,6 +56,7 @@ async function Comprar() {
 }
 
 async function Addcarrinho(number) {
+    
     var response = await fetch("https://api.itbook.store/1.0/search/love");
     var bodyjson = await response.json();
  var pedido = {
