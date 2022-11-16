@@ -123,3 +123,6 @@ async function Addcarrinho(number) {
 
 
 }
+function MudarPagina() {
+    window.location.href = "../Main/Home.html"
+}

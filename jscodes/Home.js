@@ -1,7 +1,5 @@
 
-function MudarPagina() {
-    window.location.href = "../main/Home.html"
-}
+
 
 
 window.onload = async function sethome() {
