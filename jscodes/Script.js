@@ -1,32 +1,9 @@
 
 // criei uma função e add o async
-
-async function Pesquisar_Livro() {
-    // peguei o valor do elemento imput
-    var livroQeuquero = document.getElementById("PesquisaLivro").value;
-
-    // peguei a URL da var endpoit e concatenei com o livvro desejado
-    var endpoit = `(https://api.itbook.store/1.0/search/mongodb/${livroQeuquero})`;
-
-    // usando a URL para chamar a API, que contém o livro que eu quero
-    // como o feth sempre volta uma promessa estou usando o await para esperaar
-    var resposta = await feth(endpoit);
-
-    // usando a função .json() para acessar o corpo da resposta
-    // coloquei o await pois esta função retorna uma pomessa
-    var CorpoJson = await resposta.JSON();
-
-    // peguei a DIV resultado do HTML e criei uma variavel
-    var resultado = document.getElementById("resultado");
-
-    // sempre limpo oq está dentro da DIV resultado
-    resultado.innerHTML = "";
-
-}
-
+var CarrinhoArray  = []
 async function entrar() {
     debugger
-    const corpo = {
+    var corpo = {
         email: document.getElementById("email").value,
         senha: document.getElementById("senha").value,
 
@@ -41,16 +18,24 @@ async function entrar() {
     }
     const resultadoApi = await fetch("https://codifica-demo-api.herokuapp.com/api/v1/users/login", requisicao);
     const resultadojson = await resultadoApi.json();
+    alert (resultadojson.mensagem)
 
-    alert(resultadojson.mensagem)
+    if (resultadoApi.ok){
+
+        window.location.href = "../Main/Home.html";
+
+    } else {
+        alert(resultadojson.mensagem)
+    }
+    
 }
 
 function navegarLogin() {
-    window.location.href = "Login/login.html";
+    window.location.href = "../Login/login.html";
 }
 
 function navegarHome() {
-    window.location.href = "../home.html";
+    window.location.href = "../Main/home.html";
 }
 
 async function Comprar() {
@@ -63,3 +48,27 @@ async function Comprar() {
     alert(book)
 }
 
+async function Addcarrinho(number) {
+    var response = await fetch("https://api.itbook.store/1.0/search/love");
+    var bodyjson = await response.json();
+ var pedido = {
+    idtitulo: "titulo" + number,
+    idpreco: "preco" + number,
+    idimg: "img" + number
+ }
+
+    // var para usar o valor literal do item
+    var titulo = bodyjson.books[number].title;
+    var preco = bodyjson.books[number].price.replace("$", "R$ ");
+    var imagem = bodyjson.books[number].image;
+    
+    // uso para cálculo
+
+    var precojson = preco.replace("R$", "");
+    var precocalc = parseFloat(precojson);
+    var precototal = precocalc + precocalc * 2;
+        console.log(precototal)
+
+
+
+}

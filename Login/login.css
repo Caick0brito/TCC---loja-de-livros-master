@@ -42,15 +42,10 @@ input button {
 .fundo-login {
   background-color: rgb(82, 82, 82);
   border: 2px rgb(0, 0, 0) solid;
-
 }
 
-.logo {
-  align-items: center;
-}
-
-
-.logo:hover {
-  height: 30vh;
-  width: 20vw;
+.botao {
+  position: relative;
+  left: -5px; 
+  
 }

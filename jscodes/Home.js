@@ -1,4 +1,11 @@
+
+function MudarPagina() {
+    window.location.href ="paginaEmail/Home.html"
+}
+
+
 window.onload = async function sethome() {
+
 
     var response = await fetch("https://api.itbook.store/1.0/search/love");
     var bodyjson = await response.json();
