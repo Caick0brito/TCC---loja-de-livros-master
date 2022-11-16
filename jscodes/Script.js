@@ -115,4 +115,6 @@ async function Addcarrinho(number) {
     precocart.classList.add("p-preco-carrinho")
     precocart.setAttribute("id", idpreco)
     // precocart.innerText =   ;
+
+    document.querySelector(".carrinho-titulo-main").appendChild(addproduto)
 }
