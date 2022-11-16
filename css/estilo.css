@@ -1,3 +1,7 @@
+* {
+  font-family: 'Roboto', sans-serif;
+}
+
 header {
   background-color: rgb(124, 120, 120);
   width: 99vw;
@@ -73,6 +77,8 @@ img {
 }
 
 .Caixa1 {
+
+  box-shadow: 5px 5px 5px rgb(87, 87, 87);
   box-sizing: border-box;
   max-width: 300px;
   max-height: 3750px;
@@ -167,7 +173,7 @@ p {
 }
 
 aside {
-
+  box-shadow: 10px 5px 5px black;
   height: 100vh;
   width: 25%;
   margin-right: 0;

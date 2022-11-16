@@ -46,7 +46,7 @@ async function entrar() {
 }
 
 function navegarLogin() {
-    window.location.href = "Login/Login.html";
+    window.location.href = "Login/login.html";
 }
 
 function navegarHome() {

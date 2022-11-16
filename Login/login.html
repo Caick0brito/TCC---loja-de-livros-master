@@ -1,17 +1,35 @@
+
 <!DOCTYPE html>
 <html lang="Pt-br">
+
+
+<!DOCTYPE html>
+
+<html lang="pt-br">
+
 
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
   <title>Document</title>
 
   <link rel="stylesheet" href="login.css">
   
   <head>
 
+  <title>Login Livraria</title>
+  <link rel="stylesheet" href="../css/reset.css">
+  <link rel="stylesheet" href="../css/estilo.css">
+  <link rel="stylesheet" href="login.css">
+
+
+
+
   <body>
+    <a href="../Home.html" class="logo"><i class="fa-solid fa-book-journal-whills"></i></a>
+    
     <div>
       <h1>login</h1>
       <input type="text" placeholder="email" id="email">
@@ -22,7 +40,41 @@
       <script src="son.js"></script>
     </div>
 
-  </body>
+
 </head>
 
-<input type="button" value="ir para primeira pagina " onclick="navegarparapagina()">
+<script src="../jscodes/Script.js"></script>
+
+<body>
+  <header>
+
+
+
+
+
+    <!-- <div class="Pesquisa">
+
+          <input type="text" class="btnheader" placeholder="" id="PesquisaLivro">
+          <i id="Pesquisario" class="fa-solid fa-magnifying-glass" onclick=Pesquisar_Livro()></i>
+
+      </div> -->
+    <!-- <div class="Carrinho">
+        <i id="Login" class="fa-solid fa-user" onclick="navegarLogin()"></i>
+        <i id="btnheader" class="fa-solid fa-cart-shopping" onclick="Carrinho()"></i>
+      </div> -->
+
+  </header>
+  <div class="fundo-login">
+    <h1 style="padding-bottom: 10px;">login</h1>
+    <input type="text" placeholder="email" id="email">
+    <br><br>
+    <input type="password" placeholder="senha" id="senha">
+    <br><br>
+    <input type="button" value="Entrar" onclick="entrar()">
+    <script src="son.js"></script>
+  </div>
+
+</body>
+
+<script src="https://kit.fontawesome.com/e14263e65c.js" crossorigin="anonymous"></script>
+
