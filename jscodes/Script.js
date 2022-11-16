@@ -2,13 +2,13 @@ var corpojsonmain = localStorage.getItem("login")
 var corpomain = JSON.parse(corpojsonmain)
 // criei uma função e add o async
 
-var CarrinhoArray  = []
+var CarrinhoArray = []
 async function entrar() {
     debugger
     var corpo = {
         email: document.getElementById("email").value,
         senha: document.getElementById("senha").value,
-        login:false,
+        login: false,
         produtos: []
     };
 
@@ -21,19 +21,19 @@ async function entrar() {
     }
     const resultadoApi = await fetch("https://codifica-demo-api.herokuapp.com/api/v1/users/login", requisicao);
     const resultadojson = await resultadoApi.json();
-    alert (resultadojson.mensagem)
+    alert(resultadojson.mensagem)
 
-    if (resultadoApi.ok){
+    if (resultadoApi.ok) {
         corpo.login = true
         corpo.append(CarrinhoArray)
         var corpojson = JSON.stringify(corpo)
-        localStorage.setItem("login", corpojson )
+        localStorage.setItem("login", corpojson)
         window.location.href = "../Main/Home.html";
 
     } else {
         alert(resultadojson.mensagem)
     }
-    
+
 }
 
 function navegarLogin() {
@@ -56,26 +56,27 @@ async function Comprar() {
 }
 
 async function Addcarrinho(number) {
-    
+
     var response = await fetch("https://api.itbook.store/1.0/search/love");
     var bodyjson = await response.json();
- var pedido = {
-    idtitulo: "titulo" + number,
-    idpreco: "preco" + number,
-    idimg: "img" + number
- }
+
+    var idtitulo = "titulo" + number;
+    var idpreco = "preco" + number;
+    var idimg = "img" + number;
+
 
     // var para usar o valor literal do item
-    var titulo = bodyjson.books[number].title;
-    var preco = bodyjson.books[number].price.replace("$", "R$ ");
-    var imagem = bodyjson.books[number].image;
-    
+    var pedido = {
+        titulo: bodyjson.books[number].title,
+        preco: bodyjson.books[number].price.replace("$", "R$ "),
+        imagem: bodyjson.books[number].image,
+    }
     // uso para cálculo
 
-    var precojson = preco.replace("R$", "");
+    var precojson = pedido.preco.replace("R$", "");
     var precocalc = parseFloat(precojson);
     var precototal = precocalc + precocalc * 2;
-        console.log(precototal)
+    console.log(precototal)
 
 
 
