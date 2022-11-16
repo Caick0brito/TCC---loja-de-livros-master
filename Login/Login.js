@@ -1,7 +1,6 @@
 
-
 function MudarPagina() {
-    window.location.href = "Main/Home.Html"
+    window.location.href = "Home.html"
 }
 
 
