@@ -37,9 +37,7 @@
 
     </header>
     <main>
-        <aside style="display: none;">
-            <h2>Carrinho</h2>
-        </aside>
+
 
         <div id="centrodeimagens">
 
@@ -116,28 +114,27 @@
                 <input type="button" value="Adicionar Carrinho" class="addCarrinho" onclick=Addcarrinho(8)>
 
             </div>
-        </div> 
+        </div>
         <aside id="aside">
-            <div id=" espaco-carrinho">
+            <div id="espaco-carrinho">
                 <div>
 
                     <h1 class="carrinho-titulo-main"><i id="btnheader" class="fa-solid fa-cart-shopping"></i></H1>
                 </div>
                 <!-- nesse aqui que é pra estilizar -->
-                <template>
-                    <div class=" add-produto">
-                        <div class="div-img-produto-carrinho"><img class="img-produto-carrinho"
-                                src="https://i.pinimg.com/736x/c2/67/a7/c267a7b64cd8a9a726f819f848b7cc51.jpg" alt="">
-                        </div>
-                        <div class="titulo-produto-carrinho">
-                            <p class="p-titulo-carrinho">titulo do livro</p>
-                        </div>
-                        <div class="preco-produto-carrinho">
-                        </div>
-                        <p class="p-preco-carrinho">R$50,00</p>
+
+                <div class="add-produto" style="display: none;">
+                    <div class="div-img-produto-carrinho"><img class="img-produto-carrinho"
+                            src="https://i.pinimg.com/736x/c2/67/a7/c267a7b64cd8a9a726f819f848b7cc51.jpg" alt="">
                     </div>
-                    >
-                </template>
+                    <div class="titulo-produto-carrinho">
+                        <p class="p-titulo-carrinho">titulo do livro</p>
+                    </div>
+                    <div class="preco-produto-carrinho">
+                    </div>
+                    <p class="p-preco-carrinho">R$50,00</p>
+                </div>
+
 
             </div>
         </aside>

@@ -49,11 +49,9 @@ header {
 main {
   display: flex;
   box-sizing: border-box;
-
-  height: 100%;
   width: 99vw;
   justify-content: center;
-  align-items: center;
+  align-items: top;
   flex-direction: row;
   flex-wrap: wrap;
 
@@ -63,6 +61,10 @@ img {
   width: 250px;
   margin: 10px;
   object-fit: cover;
+}
+
+#div-titulo-carrinho {
+  max-width: 15 0px;
 }
 
 #titulo-livros {
@@ -121,7 +123,6 @@ a:hover {
   display: flex;
   box-sizing: border-box;
   background-color: rgb(32, 32, 32);
-  height: 100vh;
   width: 60vw;
   justify-content: center;
   align-items: center;
@@ -174,16 +175,13 @@ p {
 
 aside {
   display: none;
+  top: 0;
   box-shadow: 10px 5px 5px black;
-  height: 100vh;
+  min-height: 200px;
   width: 25%;
   margin-right: 0;
   background-color: brown;
   right: 0;
-}
-
-aside.show {
-  width: auto;
 }
 
 .carrinho-titulo-main {
